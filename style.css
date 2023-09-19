@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner{
+  width: 100%;
+  height: 800px;
+  background-image: url(bckgrnd.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+/*navigation bar */
+nav { 
+  width: 100%;
+}
+
+.myName-logo{
+  font-size: 30px;
+  padding: 0 50px; 
+  line-height: 80px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Arimo';
+}
+
+nav ul{
+  margin-right: 100px;
+  float: right;
+}
+nav ul li{
+  font-size: 24px;
+  font-family: 'Arimo';
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: #6b4c5d;
+}
+
+/*Typed Name*/
+
+.name-container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.name-container p {
+  font-size: 50px;
+  color: white;
+  opacity: 1;
+  font-family: 'Arimo';
+  font-weight: 800;
+}
+
+
+/*ABOUT ME SECTION*/
+.abtMedivider {
+  height: 3px;
+  width: 100%; 
+  background-color: #71615A;
+}
+
+.AboutMe-container {
+  background-color: #C4A9AE ;
+  position:relative;
+  padding: 5%
+}
+
+.AboutMe-header {
+  font-size: 45px;
+  padding: 0 50px; 
+  line-height: 80px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Arimo';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgofMe {
+  width: 500px; 
+  height: 500px;
+  border-radius: 50%;
+}
+.text-container{ 
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 54%;
+  
+}
+
+.aboutMeText {
+  color: white; 
+  font-family: 'Arimo';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.skills-container1 {
+  left: 45%; 
+  top: 45%;
+}
+
+.skills-container1 .skills {
+  color:white; 
+  font-family: 'Arimo';
+  font-weight: 900;
+  font-size: 35px;
+  background-color: #71615A;
+  border-radius: 9px 9px 9px 9px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 10%;
+  position: absolute;
+  left: 60%; 
+  top: 64%; 
+}
+
+.skills-container1 ul {
+  padding: 1%;
+  position: absolute;
+  left: 45%;
+  top: 70%;
+}
+
+.skills-container1 ul li {
+  display: inline-block;
+  color: white;
+  font-family: 'Arimo';
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #71615A;
+  padding: 10px;
+  margin: 0 25px;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.skills-container2 ul {
+  padding: 1%;
+  position: absolute;
+  left: 45%;
+  top: 80%;
+}
+
+.skills-container2 ul li {
+  display: inline-block;
+  color: white;
+  font-family: 'Arimo';
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #71615A;
+  padding: 10px;
+  margin: 0 25px;
+  border-radius: 7px 7px 7px 7px;
+}
+
+
+.line1 {
+  width: 32%;
+  background-color: #71615A;
+  height: 2px; 
+  position: absolute;
+  left: 52%; 
+  top: 60%
+}
+
+.line2 {
+  width: 32%; 
+  background-color: #71615A;
+  height: 2px; 
+  position: absolute;
+  left: 52%; 
+  top: 27%
+}
+
+
+
+/*PROJECTS CONTAINER*/
+.Projectcontainer{
+  position:relative;
+  background-color: #C4A9AE;
+  padding: 5%; 
+}
+
+.ProjectDiv  {
+  height: 3px; 
+  width: 100%;
+  background-color: #71615A;
+}
+
+.ProjectLabel {
+  font-size: 45px;
+  padding: 0 50px; 
+  line-height: 80px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Arimo';
+}
+
+.container {
+  display: flex;
+  height: 400px;
+}
+
+#project1 {
+  background-image: url(1.png);
+}
+
+#project2 {
+  background-image: url(2.png);
+}
+
+#project3 {
+  background-image: url(3.png);
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color:white;
+  transition: flex .4s ease;
+  padding: 5%; 
+}
+
+.section:hover {
+  flex: 4;
+}
+
+.section .content {
+  z-index: 2;
+}
+
+h1{
+  font-family: monospace;
+  transition: opacity .3s ease-in; 
+  font-size: 50px;
+}
+
+.section .shadow {
+  background-color: #6b4c5d;
+  opacity: .4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color .8s ease-in-out;
+
+}
+
+
+.section:hover .shadow {
+  background-color: #6b5c5d;
+  opacity: 0.8;
+}
+.section:hover .shadow h2{
+  opacity: 2;
+}
+
+.section:hover h1{
+  opacity: 0;
+}
+
+
+/* EXPERIENCE */
+
+.experienceContainer{
+  background-image: url(expbckgrnd.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative
+
+}
+
+.experienceDivider{
+  background-color: #71615A;
+  width: 90%; 
+  height: 3px; 
+  position: absolute; 
+  top: 0px;
+}
+
+.experienceLabel {
+  font-size: 45px;
+  padding: 0 50px; 
+  line-height: 80px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Arimo';
+  position:absolute; 
+  top: 10%;
+}
+
+.exp1 {
+  color: white;
+  position: absolute;
+  left: 100px;
+  top: 250px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #6b4c5d;
+  width: 20%;
+  padding: 5px;
+  border-radius: 9px 9px 9px 9px;
+}
+
+.exp2 {
+  color: white;
+  position: absolute; 
+  top: 295px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #6b4c5d;
+  width: 20%;
+  padding: 5px;
+  border-radius: 9px 9px 9px 9px;
+}
+
+.exp3 {
+  color: white; 
+  position: absolute;
+  top: 320px; 
+  left: 1050px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #6b4c5d;
+  width: 15%;
+  padding: 5px;
+  border-radius: 9px 9px 9px 9px;
+}
+
+.p-exp {
+  color:white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 800;
+  position: absolute
+}
+
+#p1 {
+  left: 7%; 
+  top: 43%
+}
+
+#p2 {
+  top: 48%
+}
+
+#p3 {
+  left: 73%;
+  top: 55%
+}
