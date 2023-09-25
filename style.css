@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .banner{
   width: 100%;
@@ -15,6 +16,9 @@
 /*navigation bar */
 nav { 
   width: 100%;
+  background-color: #C4A9AE;
+  position:fixed;
+  z-index: 4;
 }
 
 .myName-logo{
@@ -29,10 +33,12 @@ nav {
 nav ul{
   margin-right: 100px;
   float: right;
+
 }
 nav ul li{
   font-size: 24px;
   font-family: 'Arimo';
+  font-weight: 400;
   display: inline-block;
   line-height: 80px;
   margin: 0 15px;
@@ -67,6 +73,31 @@ nav ul li a:hover{
   font-weight: 800;
 }
 
+/* SOCIAL LOGOS*/
+.logo-container {
+  width: 20%;
+  position: fixed;
+  left: 1%; 
+  top: 38%;
+  z-index: 5;
+}
+.logo-container ul {
+  list-style-type: none
+}
+
+.logo-container ul li {
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+.logos a {
+  font-size: 45px;
+  color: #6b4c5d
+}
+
+.logos a:hover {
+  color:beige
+}
 
 /*ABOUT ME SECTION*/
 .abtMedivider {
@@ -248,6 +279,7 @@ nav ul li a:hover{
   padding: 5%; 
 }
 
+
 .section:hover {
   flex: 4;
 }
@@ -272,7 +304,16 @@ h1{
 
 }
 
+.section .shadow h2 {
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2%;
+  opacity: 0;
+  transition: opacity .5s ease-out;
 
+}
 .section:hover .shadow {
   background-color: #6b5c5d;
   opacity: 0.8;
@@ -321,68 +362,37 @@ h1{
   top: 10%;
 }
 
-.exp1 {
-  color: white;
-  position: absolute;
-  left: 100px;
-  top: 250px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #6b4c5d;
-  width: 20%;
-  padding: 5px;
-  border-radius: 9px 9px 9px 9px;
+.exp-content {
+  width: 88%; 
+  display:flex;
+  height: 500px;
+  margin-top: 10%;
+  
 }
 
-.exp2 {
-  color: white;
-  position: absolute; 
-  top: 295px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #6b4c5d;
-  width: 20%;
-  padding: 5px;
-  border-radius: 9px 9px 9px 9px;
+.exp-section {
+  background-color: #71615A;
+  width: 35%;
+  margin: 1%;
+  position: relative;
+  color:white;
+  border-radius: 5% 5% 5% 5%;
 }
 
-.exp3 {
-  color: white; 
-  position: absolute;
-  top: 320px; 
-  left: 1050px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #6b4c5d;
-  width: 15%;
-  padding: 5px;
-  border-radius: 9px 9px 9px 9px;
-}
+.exp-section h2 {
+  text-align: center;
+  margin-top: 4%;
+} 
 
-.p-exp {
-  color:white; 
-  display: flex;
-  justify-content: center;
+
+.exp-section ul li{
+  margin-top: 8%;
+  margin-left: 2%;
   align-items: center;
-  width: 20%;
+  justify-content: center;
+  display: flex;
   font-size: 20px;
-  font-weight: 800;
-  position: absolute
 }
 
-#p1 {
-  left: 7%; 
-  top: 43%
-}
 
-#p2 {
-  top: 48%
-}
 
-#p3 {
-  left: 73%;
-  top: 55%
-}
